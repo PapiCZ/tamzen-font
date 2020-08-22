@@ -1,11 +1,31 @@
 Tamzen font
 ===========
 
-This is [my personal fork][1] of the wonderful [Tamsyn font by Scott Fial][2].
-It is programatically forked from Tamsyn version 1.11 by the `Rakefile` script
-(see the "Building" section below) which backports glyphs from older versions
-while deleting deliberately empty glyphs (which are marked as unimplemented)
-to allow secondary/fallback fonts to provide real glyphs at those codepoints.
+This fork of the original tamzen-font repo adds missing czech accents:
+ * Č (U+010C)
+ * č (U+010D)
+ * Ď (U+010E)
+ * ď (U+010F)
+ * Ě (U+011A)
+ * ě (U+011B)
+ * Ň (U+0147)
+ * ň (U+0148)
+ * Ř (U+0158)
+ * ř (U+0159)
+ * Š (U+0160)
+ * š (U+0161)
+ * Ť (U+0164)
+ * ť (U+0165)
+ * Ů (U+016E)
+ * ů (U+016F)
+ * Ž (U+017D)
+ * ž (U+017E)
+
+_These characters are added only in **bdf/Tamzen6x12r.bdf**, because I use
+only this font size. If you want to add these characters to more versions
+of this font, then you can make it yourself and create pull request. It's easy
+and fast process, but I don't have motivation for it, because I use Tamzen
+font only in polybar._
 
 The "TamzenForPowerline" fonts provide additional [Powerline symbols][5],
 which are programatically injected with [ZyX_I's bitmap-font-patcher][6].
